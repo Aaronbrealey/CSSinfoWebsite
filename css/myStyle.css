@@ -1,7 +1,7 @@
 #myBtn {
     display:fixed;
     position: fixed;
-    bottom: 30px;
+    top: 30px;
     right: 30px;
     z-index: 99;
     border: none;
@@ -15,4 +15,25 @@
 
 #myBtn:hover{
     background-color: dimgray;
+}
+
+#btn1 {
+ background-color: black;
+    color: white;
+    border-radius: 50px;
+}
+#btn2 {
+    background-color: black;
+    color: white;
+    border-radius: 50px; 
+}
+#btn3 {
+     background-color: black;
+    color: white;
+    border-radius: 50px;
+}
+#btn4 {
+     background-color: black;
+    color: white;
+    border-radius: 50px;
 }

@@ -10,22 +10,29 @@
     </head>
 
     <body>
-<!--adding in a footer-->
-    <div class="navbar navbar-default navbar-fixed-bottom">
-        <div class="container">
-            <p>site built by Aaron Brealey</p>
-               <button onclick="topfunction()" id="myBtn" title="Go to Top">Go to Top</button>
-        </div>    
-    </div>
-        
 <!-- no idea what this does to be honest either-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
 
 <!--something to do with the navbar, might remove this-->
         <div class="navbar navbar-inverse navbar-static-top">
-     
-            </div>
+                <script>window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+    
+}           </script>
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </div>
 <!--the jumbotron, definitely know this!-->
     <div class="container">
         <div class="jumbotron">
@@ -34,10 +41,24 @@
             <hr class="my-4">
             <p>Each Button Takes you to each poster, and finally the merit criteria report. Remember to ask how to change the colour.</p>
             <p class="lead">
-            <a class="btn btn-primary btn-lg" role="button"></a>
+            <a class="btn btn-lg" id="btn1" role="button">P1 - HTML and CSS</a>
+            <a class="btn btn-lg" id="btn2" role="button">P2 - Script Language Fundamentals</a>
+            <a class="btn btn-lg" id="btn3" role="button">P3 - The Features of a Box Model CSS</a>
+            <a class="btn btn-lg" id="btn4" role="button">Merit Report</a>
             </p>
         </div>
     </div>
-
+<!-- adding in image placeholders-->
+        <div class="container">
+            <a href="https://placeholder.com"><img id="img1" src="http://via.placeholder.com/450x250" align="middle"></a>
+            <br>
+            <br>
+            <br>
+            <a href="https://placeholder.com"><img id="img2" src="http://via.placeholder.com/450x250" align="middle"></a>
+            <br>
+            <br>
+            <br>
+            <a href="https://placeholder.com"><img id="img3" src="http://via.placeholder.com/450x250" align="middle"></a>
+        </div>
 </body>
 </html>
