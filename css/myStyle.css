@@ -51,6 +51,7 @@
 }
 
 #images {
+    /*image group base positioning*/
     width: 940px;
     margin-top: 50px;
     margin-left: 30px;
@@ -59,27 +60,32 @@
 }
 
 #img1 {
+    /*individual image positioning*/
     margin-bottom: 40px;
     padding-right: 70px;
 }
 
 #img2 {
+    /*individual image positioning*/
     margin-bottom: 40px;
     padding-right: 70px;
 }
 
 #img3 {
+    /*individual image positioning*/
     margin-bottom: 30px;
     padding-right: 70px;
 }
 
 #meritPaper {
+    /*code for the div in which the link is in*/
     margin-left: 30px;
     margin-top: 50px;
     float: left;
 }
 
 #merit {
+    /*moving the link to the correct position*/
     float: right;
     margin-bottom: 20px;
     margin-top: 5cm;
