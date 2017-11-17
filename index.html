@@ -10,15 +10,15 @@
     </head>
 
     <body>
-<!-- no idea what this does to be honest either-->
+<!-- jQuery Libraries-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
 
-<!--something to do with the navbar, might remove this-->
-        <div class="navbar navbar-inverse navbar-static-top">
+<!--the Navbar, and button for the navbar-->
+        <div class="navbar navbar-inverse navbar-fixed-top">
                 <script>window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) { //the button will only appear after the user has scrolled at leat 20px down the screen
         document.getElementById("myBtn").style.display = "block";
     } else {
         document.getElementById("myBtn").style.display = "none";
@@ -30,35 +30,35 @@ function topFunction() {
     document.body.scrollTop = 0; // For Chrome, Safari and Opera 
     document.documentElement.scrollTop = 0; // For IE and Firefox
     
-}           </script>
+}           </script> <!--the scripting for the button-->
                 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         </div>
-<!--the jumbotron, definitely know this!-->
+<!--the jumbotron, and the various buttons on the jumbotron-->
+        
     <div class="container">
-        <div class="jumbotron">
+        <div class="jumbotron" id="jumbotron">
         <h1>A Website for Information on HTML and CSS.</h1>
             <p class="lead">By Aaron Brealey</p>
             <hr class="my-4">
-            <p>Each Button Takes you to each poster, and finally the merit criteria report. Remember to ask how to change the colour.</p>
+            <p>Each Button Takes you to three different posters. Each of them covering a different aspect of CSS and HTML. Lastly, there is a short report on the implementation of CSS and the various scripting languages.</p>
             <p class="lead">
-            <a class="btn btn-lg" id="btn1" role="button">P1 - HTML and CSS</a>
-            <a class="btn btn-lg" id="btn2" role="button">P2 - Script Language Fundamentals</a>
-            <a class="btn btn-lg" id="btn3" role="button">P3 - The Features of a Box Model CSS</a>
-            <a class="btn btn-lg" id="btn4" role="button">Merit Report</a>
+            <a class="btn btn-lg" href="#img1" id="btn1" role="button">The Features of Box Model CSS</a>
+            <a class="btn btn-lg" href="#img2" id="btn2" role="button">Script Language Fundamentals</a>
+            <a class="btn btn-lg" href="#img3" id="btn3" role="button">HTML and CSS</a>
+            <a class="btn btn-lg" href="#merit" id="btn4" role="button">Script languages and CSS</a>
             </p>
         </div>
     </div>
 <!-- adding in image placeholders-->
-        <div class="container">
-            <a href="https://placeholder.com"><img id="img1" src="http://via.placeholder.com/450x250" align="middle"></a>
-            <br>
-            <br>
-            <br>
-            <a href="https://placeholder.com"><img id="img2" src="http://via.placeholder.com/450x250" align="middle"></a>
-            <br>
-            <br>
-            <br>
-            <a href="https://placeholder.com"><img id="img3" src="http://via.placeholder.com/450x250" align="middle"></a>
+        <br>
+        <br>
+        <div id="images">
+                    <img align="left" id="img1" src="Posters/explain-the-features-of-the-box-model-CSS-with-a-diagrammatic-example.jpg"><p id="txt1">This first poster is all about the various features and uses of a box model CSS, complete with a diagrammatic example.</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <img align="left" id="img2" src="Posters/Explain-the-fundamentals-of-a-script-language--with-examples.jpg"><p id="txt2">Secondly, we have the fundamentals of a scripting language and what defines them as such.</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <img align="left" id="img3" src="Posters/how-HTML-files-access-CSS.jpg"><p id="txt3">Lastly, we have a poster about how HTML files access and interact with CSS files. </p>
         </div>
+        <iframe src="https://docs.google.com/a/student.southstaffs.ac.uk/document/d/e/2PACX-1vTviF5e8wJCnXVM37S8m6B97uB1gmqyBJX6ckeO2sSqtIBK0Q_oi8pvPJvhzGkyVeu5civHu6YvKCq7/pub?embedded=true"></iframe>
 </body>
 </html>
